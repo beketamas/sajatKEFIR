@@ -1,0 +1,92 @@
+﻿<Window x:Class="WPFKifir.Keszitok"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFKifir"
+        mc:Ignorable="d"
+        Title="Keszitok" Height="250" Width="400" Background="#FF353A48">
+
+    <Border BorderBrush="LightBlue" BorderThickness="1" Margin=" 10" CornerRadius="10">
+        <Grid Background="#FF1C1D1F">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="0" Grid.Row="0" BorderBrush="LightBlue" BorderThickness="1" CornerRadius="10"/>
+            <Border Grid.Column="1" Grid.Row="0" BorderBrush="LightBlue" BorderThickness="1" CornerRadius="10"/>
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="LightBlue" BorderThickness="1" CornerRadius="10"/>
+            <Border Grid.Column="0" Grid.Row="2" BorderBrush="LightBlue" BorderThickness="1" CornerRadius="10"/>
+            <Border Grid.Column="1" Grid.Row="1" BorderBrush="LightBlue" BorderThickness="1" CornerRadius="10"/>
+            <Border Grid.Column="1" Grid.Row="2" BorderBrush="LightBlue" BorderThickness="1" CornerRadius="10"/>
+
+            <Label 
+               Grid.Column="0"
+               Grid.Row="0"
+               Foreground="White"
+               FontSize="15"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin=" 0 0 0 0 "
+               Content="Készítők"/>
+
+            <Label 
+               Grid.Column="1"
+               Grid.Row="0"
+               Foreground="White"
+               FontSize="15"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin=" 0 0 0 0 "
+               Content="Feladatkörök"/>
+
+
+
+            <Label Grid.Column="0"
+               Grid.Row="1"
+               Foreground="White"
+               FontSize="15"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin=" 0 0 0 0 "
+               Content="Beke Tamás"/>
+
+            <Label Grid.Column="1"
+               Grid.Row="1"
+               Foreground="White"
+               FontSize="15"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin=" 0 0 0 0 "
+               Content="MainWindow, Interface"/>
+
+
+
+            <Label Grid.Column="0"
+               Grid.Row="2"
+               Foreground="White"
+               FontSize="15"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin=" 0 0 0 0 "
+               Content="Barizs Márton Dániel"/>
+
+            <Label Grid.Column="1"
+               Grid.Row="2"
+               Foreground="White"
+               FontSize="15"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Margin=" 0 0 0 0 "
+               Content="Felület, Felvétel"/>
+
+        </Grid>
+    </Border>
+    
+</Window>

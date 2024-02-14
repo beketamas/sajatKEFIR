@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2364280.png" />
+    <None Remove="878871_crayon-tip_512x512.png" />
+    <None Remove="kreta.png" />
+    <None Remove="pen-307487_960_720.jpg" />
+    <None Remove="pen-307487_960_720.png" />
+    <None Remove="red-crayon-isolated-on-a-transparent-background-png.png" />
+    <None Remove="zsir-600x315.png" />
+    <None Remove="zsir.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="kreta.png" />
+    <Resource Include="zsir.png" />
+  </ItemGroup>
+
+</Project>

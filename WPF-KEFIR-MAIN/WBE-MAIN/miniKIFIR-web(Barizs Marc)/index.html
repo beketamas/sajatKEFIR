@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adattáblázat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+        <div id="container">
+            <label for="minPontszamID"><h1>Pontszám minimuma:</h1></label> 
+            <input type="number" name="minPontszam" id="minPontszamID" min="0" max="100" oninput="Listaz()">
+            <input type="button" class="button" value="CSV" onclick="CSVBE()">
+        </div>
+        
+
+        <div id="dinamikusTablazatDIV">
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+body {
+    /*display: flex;*/
+    margin: 0;
+    padding: 0;
+    /* background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg); */
+    background: rgb(12,44,131);
+    background: radial-gradient(circle, rgba(12,44,131,1) 0%, rgba(93,15,15,1) 84%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+    letter-spacing: 1px;
+}
+
+:root {
+    --fekete: #000;
+    --feher: #fff;
+    --szurkeHEADER: #49494933;
+    --szurkeDIV: #272727;
+    --rozsaszin: #ff1ca0;
+    --sotetkek: #3535ff;
+    --zold: #3dff3d;
+    --citrom: #ffff37;
+    --piros: #ff4e4e;
+    --vilagosrozsaszin: #ff53b7;
+    --vilagoskek: #5454ff;
+    --vilagoszold: #6cff6c;
+    --narancs: #e98f19;
+    --piri: #ff6666;
+    --tdBACKGROUND: #2727271c;
+    --trHOVER: #6e6e6e25;
+}
+
+#dinamikusTablazatDIV {
+    display: flex;
+    position: relative;
+    margin: 300px auto 0;
+    max-height: 500px;
+    max-width: 1500px;
+    background: linear-gradient(0deg, #000, var(--szurkeDIV));
+    border-radius: 5px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    position: relative;
+    margin-bottom: -250px;
+}
+
+#minPontszamID {
+    display: flex;
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button {
+    background-color: var(--vilagoszold);
+    padding-left: 2px;
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    border: 3px dotted black;
+    border-radius: 50px;
+    font-weight: 900;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.button:hover {
+    background-color: rgba(0, 255, 15, 0.9);
+    border: 2px solid black;
+}
+
+#dinamikusTablazatDIV:before,
+#dinamikusTablazatDIV:after {
+    display: flex;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(10deg, var(--rozsaszin), var(--sotetkek), var(--zold), var(--citrom), var(--piros), var(--vilagosrozsaszin),
+            var(--vilagoskek), var(--vilagoszold), var(--narancs), var(--piri));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+    
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#dinamikusTablazatDIV::after{
+    filter: blur(50px);
+}
+
+table {
+    display: flex;
+    color: var(--feher);
+    width: 1000;
+    border-spacing: 0px;
+    height: 500px;
+    overflow-y: hidden;
+}
+
+tr:hover {
+    color: white;
+    background-color: var(--trHOVER);
+}
+
+td {
+    text-align: center;
+    width: 300px;
+}
+
+td:hover {
+    color: lightskyblue;
+    font-weight: bold;
+    background-color: var(--tdBACKGROUND);
+    cursor: default;
+}
+
+th {
+    font-size: 25px;
+    background-color: var(--szurkeDIV);
+}
+
+th:hover {
+    cursor: pointer;
+}
+
+#pontjelzo {
+    vertical-align: middle;
+    margin-left: 500px;
+}
+
+/* styles for desktop devices */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
+    table{
+        overflow: auto;
+    }
+}
+
+/* styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .button{
+        font-size: larger;
+        height: 90px;
+        width: 90px;
+        border-radius: 65px;
+    }
+    #minPontszamID{
+        height: 25%;
+        width: 25%;
+    }
+    table{
+        overflow-y: scroll;
+    }
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 30px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .button {
+        font-size: larger;
+        height: 105px;
+        width: 105px;
+        border-radius: 80px;
+    }
+    #minPontszamID{
+        height: 50%;
+        width: 50%;
+    }
+    table{
+        overflow-y: scroll;
+    }
+}

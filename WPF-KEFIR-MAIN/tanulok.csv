@@ -1,0 +1,16 @@
+azonosito;nev;email;szuletesi_ev;ertcim;matek_pontszam;magyar_pontszam
+18345678901;Tóth Péter;peter.toth@example.com;2001-02-10;Szeged, Rákóczi út 78.;78;82
+29456789012;Varga Edit;edit.varga@example.com;2000-11-03;Pécs, Szabadság tér 34.;90;75
+30459776642;Kiss Kata;kata.kiss@example.com;2002-04-25;Nyíregyháza, Bessenyei utca 456.;89;84
+32401683481;Fekete András;andras.fekete@example.com;2004-06-08;Eger, Dobó tér 789.;87;76
+34567890123;Kiss András;andras.kiss@example.com;2002-04-28;Miskolc, Ady utca 45.;88;91
+37068217468;Horváth Gergő;gergo.horvath@example.com;2002-07-18;Miskolc, Bajnai út 567.;79;82
+37567410094;Varga Anna;anna.varga@example.com;2004-01-30;Győr, Arany János utca 890.;95;91
+45924560004;Tóth Zsuzsa;zsuzsa.toth@example.com;2003-11-05;Pécs, Szent István utca 234.;88;75
+52777694987;Nagy Bence;eszter.nagy@example.com;2002-09-22;Debrecen, Petőfi tér 456.;92;89
+60629090248;Balogh István;istvan.balogh@example.com;2003-02-14;Kecskemét, Szabadság tér 1011.;93;88
+60851528440;Szabó Gábor;gabor.szabo@example.com;2004-03-10;Szeged, Dugonics tér 789.;NULL;NULL
+65234567890;Nagy Eszter;eszter.nagy@example.com;1999-08-22;Debrecen, Petőfi tér 56.;NULL;NULL
+66632400831;Molnár Péter;peter.molnar@example.com;2003-08-12;Szombathely, Kossuth tér 123.;81;73
+72123456789;Kovács János;janos.kovacs@example.com;2000-05-15;Budapest, Kossuth utca 123.;NULL;NULL
+94345649754;Kovács Tamás;janos.kovacs@example.com;2003-05-15;Budapest, Kossuth utca 123.;NULL;NULL
